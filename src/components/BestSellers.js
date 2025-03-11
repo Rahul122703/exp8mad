@@ -16,7 +16,7 @@ export default function BestSellers() {
   return (
     <section className="p-6">
       <h2 className="text-xl font-bold mb-4">Best Sellers</h2>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {bestSellers.map((product) => (
           <Card key={product.id} className="p-4 bg-white shadow-md rounded-lg">
             <img
